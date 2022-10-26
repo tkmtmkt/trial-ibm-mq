@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  mq1:
+    image: ibmcom/mq
+    container_name: MQ1
+    ports:
+      - '1414:1414'
+      - '9443:9443'
+    volumes:
+      - 'qm1data:/mnt/mqm'
+    environment:
+      - LICENSE=accept
+      - MQ_QMGR_NAME=QM1
+      - MQ_ADMIN_PASSWORD=passw0rd
+      - MQ_APP_PASSWORD=passw0rd
+
+volumes:
+  qm1data:
+    driver: local
