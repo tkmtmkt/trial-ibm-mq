@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  mq1:
+  qm1:
     image: ibmcom/mq
-    container_name: MQ1
+    container_name: QM1
     ports:
       - '1414:1414'
       - '9443:9443'
