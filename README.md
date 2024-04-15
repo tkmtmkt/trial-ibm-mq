@@ -1,4 +1,4 @@
-study-ibm-mq
+trial-ibm-mq
 ============
 
 ## 操作
